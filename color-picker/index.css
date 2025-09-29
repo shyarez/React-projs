@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 96%);
+  margin: 0.5;
+  padding: 0;
+}
+
+body.dark {
+  background-color: hsl(240, 10%, 10%);
+  color: hsl(0, 0%, 90%);
+}
+
+
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.color-picker-container.dark {
+  background-color: hsl(240, 10%, 10%);
+  color: hsl(0, 0%, 90%);
+}
+
+.color-picker-container.dark .color-display {
+  background-color: hsl(240, 10%, 15%); /* add this */
+  border-color: hsl(0, 0%, 30%);
+}
+
+
+.color-picker-container.dark input[type="color"] {
+  border-color: hsl(0, 0%, 30%);
+}
+
+h1{
+  margin: 20px 0;
+  font-size: 5rem;
+}
+
+.color-display{
+  width: 500px;
+  height:350px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  border: 4px solid hsl(258, 9%, 75%);
+  border-radius: 40px;
+  margin-bottom:30px;
+  transition: 0.25s ease;
+}
+
+.color-display p{
+  color: hsl(260, 4%, 27%);
+  font-size: 15.5px;
+  text-align:center;
+}
+
+label{
+  font-size: 1.3em;
+  font-weight:  Bold;
+  margin-bottom: 4px;
+}
+
+input[type="color"]{
+  width:60px;
+  height:50px;
+  margin: 20px 0;
+  cursor:pointer;
+  transform: scale(1.05);
+  height:40px;
+  padding:3.5px;
+  border:2px solid hsl(258, 9%, 75%);
+  border-radius: 4.5px;
+  transition: 0.2 ease;
+}
+
+@media (max-width: 600px) {
+  .color-display {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 20px;
+  }
+}
+
+button{
+  padding: 8px 12px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: hsl(258, 9%, 75%);
+  color: hsl(260, 4%, 27%);
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: hsl(258, 9%, 65%);
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
