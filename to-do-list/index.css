@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Outfit:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Urbanist:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  /*background-color: #F3F0FF; /* light mode default */
+  transition: background-color 0.5s ease, color 0.3s ease;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.to-do-list{
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+/* theme toggle */
+.theme-toggle{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #B794F4;
+  color: #1A1B2F;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h1{
+  font-family:Urbanist;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+input[type="text"]{ /* input */
+  font-size: 1.3rem;
+  font-family: Poppins;
+  padding: 13px;
+  border: 2px solid #A3BFFA;
+  border-radius: 23px;
+  color: #3D3D5C;
+  width: 60%;
+  max-width: 400px;
+}
+
+/* buttons */
+button{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.add-button{
+  background-color: #A3BFFA;
+  color: #1A1B2F;
+  font-family: Poppins;
+  padding:15px;
+  border-radius: 17px;
+  box-shadow: 5px 4px #5168b0;
+}
+.add-button:hover{
+  background-color: #7F9CF5;
+}
+
+.delete-button{
+  background-color: #F687B3;
+  color: white;
+}
+.delete-button:hover{
+  background-color: #D53F8C;
+}
+
+.move-up-button{
+  background-color: #B794F4;
+  color: white;
+}
+.move-up-button:hover{
+  background-color: #805AD5;
+}
+
+.move-down-button{
+  background-color: #81E6D9;
+  color: white;
+}
+.move-down-button:hover{
+  background-color: #319795;
+}
+
+ol{
+  padding: 0;
+  list-style: none;
+}
+li{
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  font-family: consolas;
+}
+
+.text{
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* light Mode */
+.light-mode{
+  background-color: #F3F0FF;
+  color: #3D3D5C;
+}
+.light-mode h1{
+  color: #5A67D8;
+}
+.light-mode li{
+  background-color: #E0D7FF;
+  color: #3D3D5C;
+}
+
+/* dark Mode */
+.dark-mode{
+   background-color: #0a0b23;
+  /*background-color: #1A1B2F;*/
+  color: #E0E0FF;
+}
+.dark-mode h1{
+  color: #A3BFFA;
+}
+.dark-mode li{
+  background-color: #2B2C45;
+  color: #E0E0FF;
+}
+.dark-mode input[type="text"]{
+  background-color: #2B2C45;
+  color: #E0E0FF;
+  border: 2px solid #A3BFFA;
+}
+.dark-mode .theme-toggle{
+  background-color: #A3BFFA;
+  color: #1A1B2F;
+}
