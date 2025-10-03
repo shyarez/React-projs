@@ -1,0 +1,10 @@
+🕒 Digital Clock App
+A sleek, responsive digital clock built with React, featuring real-time updates and a minimalist design. This project showcases dynamic time rendering using JavaScript's Date object and React hooks like useState and useEffect.
+> Features
+- Displays current time in 24-hour format with AM/PM
+- Styled with Google Fonts and a custom background image
+
+> Tech Stack
+- React (Functional Components + Hooks)
+- CSS (Custom styling + Google Fonts)
+- JavaScript (Date object for time logic)
