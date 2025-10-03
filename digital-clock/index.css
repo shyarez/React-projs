@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+
+
+body{
+background-image: url(assets/background.jpg);
+background-position: center;
+background-repeat : no-repeat;
+background-size: cover;
+background-attachment:fixed;
+margin: 0;
+
+display: flex;
+justify-content: center;
+min-height: 100vh;
+align-items: center;
+}
+
+.clock-container{
+backdrop-filter: blur(1.5px);
+width: 100vw;
+padding: 10px 0;
+}
+
+.clock{
+color: white;
+font-size: 5.5rem;
+font-weight: bold;
+font-family: 'Syncopate','Orbitron', monospace;
+text-align: center;
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.945);
+}
+
+
+.clock {
+color: #ccd0ef;
+font-size: 5.5rem;
+font-weight: bold;
+font-family: 'Syncopate','Orbitron', monospace;
+text-align: center;
+text-shadow:
+    0 0 5px #6a91a2,
+    0 0 10px #0a2320,
+    0 0 2px #3ebdbdb5,
+    0 0 2px #000c0b;
+}
+
+
