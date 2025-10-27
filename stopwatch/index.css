@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(5, 2, 22);
+  font-family: sans-serif;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(124, 66, 4);
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  font-size: 4.5rem;
+  font-family: 'Orbitron', monospace;
+  font-weight: bold;
+  color: rgb(241, 98, 32);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background-color: #010103; 
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0;
+  min-width: 125px;
+  border: none;
+  border-radius: 12px;
+  background-color: #300e6bbc;
+  color: rgba(226, 226, 241, 0.896);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.controls button:hover {
+  background-color: #e3744c;
+}
+
+.laps {
+  margin-top: 20px;
+  font-family: 'Share Tech Mono', 'Orbitron' , consolas, monospace;
+  text-align: left;
+  color: #4a4c5a;
+  padding: 10px 130px;
+  background-color: #101019; 
+  border-radius: 10px;
+  max-width: 300px;
+
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laps li {
+  margin: 5px 0;
+}
+
